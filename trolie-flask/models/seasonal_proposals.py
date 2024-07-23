@@ -2,12 +2,12 @@ from datetime import date, datetime  # noqa: F401
 
 from typing import List, Dict  # noqa: F401
 
-from openapi_server.models.base_model import Model
-from openapi_server.models.seasonal_proposal_season import SeasonalProposalSeason
+from trolie-flask.models.base_model import Model
+from trolie-flask.models.seasonal_proposal_season import SeasonalProposalSeason
 import re
-from openapi_server import util
+from trolie-flask import util
 
-from openapi_server.models.seasonal_proposal_season import SeasonalProposalSeason  # noqa: E501
+from trolie-flask.models.seasonal_proposal_season import SeasonalProposalSeason  # noqa: E501
 import re  # noqa: E501
 
 class SeasonalProposals(Model):

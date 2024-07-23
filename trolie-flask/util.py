@@ -1,7 +1,7 @@
 import datetime
 
 import typing
-from openapi_server import typing_utils
+from trolie-flask import typing_utils
 
 
 def _deserialize(data, klass):

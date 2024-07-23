@@ -2,14 +2,14 @@ import unittest
 
 from flask import json
 
-from openapi_server.models.forecast_proposal import ForecastProposal  # noqa: E501
-from openapi_server.models.forecast_proposal_status import ForecastProposalStatus  # noqa: E501
-from openapi_server.models.one_ofintegerstring import OneOfintegerstring  # noqa: E501
-from openapi_server.models.problem import Problem  # noqa: E501
-from openapi_server.models.real_time_proposal_status import RealTimeProposalStatus  # noqa: E501
-from openapi_server.models.realtime_proposal import RealtimeProposal  # noqa: E501
-from openapi_server.models.seasonal_rating_proposal import SeasonalRatingProposal  # noqa: E501
-from openapi_server.test import BaseTestCase
+from trolie-flask.models.forecast_proposal import ForecastProposal  # noqa: E501
+from trolie-flask.models.forecast_proposal_status import ForecastProposalStatus  # noqa: E501
+from trolie-flask.models.one_ofintegerstring import OneOfintegerstring  # noqa: E501
+from trolie-flask.models.problem import Problem  # noqa: E501
+from trolie-flask.models.real_time_proposal_status import RealTimeProposalStatus  # noqa: E501
+from trolie-flask.models.realtime_proposal import RealtimeProposal  # noqa: E501
+from trolie-flask.models.seasonal_rating_proposal import SeasonalRatingProposal  # noqa: E501
+from trolie-flask.test import BaseTestCase
 
 
 class TestRatingProposalsController(BaseTestCase):

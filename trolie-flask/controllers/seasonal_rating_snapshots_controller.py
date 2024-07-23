@@ -3,11 +3,11 @@ from typing import Dict
 from typing import Tuple
 from typing import Union
 
-from openapi_server.models.one_ofintegerstring import OneOfintegerstring  # noqa: E501
-from openapi_server.models.problem import Problem  # noqa: E501
-from openapi_server.models.season_instance import SeasonInstance  # noqa: E501
-from openapi_server.models.seasonal_rating_snapshot import SeasonalRatingSnapshot  # noqa: E501
-from openapi_server import util
+from trolie-flask.models.one_ofintegerstring import OneOfintegerstring  # noqa: E501
+from trolie-flask.models.problem import Problem  # noqa: E501
+from trolie-flask.models.season_instance import SeasonInstance  # noqa: E501
+from trolie-flask.models.seasonal_rating_snapshot import SeasonalRatingSnapshot  # noqa: E501
+from trolie-flask import util
 
 
 def get_season_instance(id):  # noqa: E501

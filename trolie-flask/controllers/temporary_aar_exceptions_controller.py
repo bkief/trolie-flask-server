@@ -3,10 +3,10 @@ from typing import Dict
 from typing import Tuple
 from typing import Union
 
-from openapi_server.models.one_ofintegerstring import OneOfintegerstring  # noqa: E501
-from openapi_server.models.problem import Problem  # noqa: E501
-from openapi_server.models.temporary_rating import TemporaryRating  # noqa: E501
-from openapi_server import util
+from trolie-flask.models.one_ofintegerstring import OneOfintegerstring  # noqa: E501
+from trolie-flask.models.problem import Problem  # noqa: E501
+from trolie-flask.models.temporary_rating import TemporaryRating  # noqa: E501
+from trolie-flask import util
 
 
 def create_temporary_aar_exception(temporary_rating=None):  # noqa: E501

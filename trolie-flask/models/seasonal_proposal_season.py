@@ -2,18 +2,18 @@ from datetime import date, datetime  # noqa: F401
 
 from typing import List, Dict  # noqa: F401
 
-from openapi_server.models.base_model import Model
-from openapi_server.models.conditional_value_set_inner import ConditionalValueSetInner
-from openapi_server.models.limit import Limit
-from openapi_server.models.limit_value_set_inner import LimitValueSetInner
-from openapi_server.models.proposal_status import ProposalStatus
+from trolie-flask.models.base_model import Model
+from trolie-flask.models.conditional_value_set_inner import ConditionalValueSetInner
+from trolie-flask.models.limit import Limit
+from trolie-flask.models.limit_value_set_inner import LimitValueSetInner
+from trolie-flask.models.proposal_status import ProposalStatus
 import re
-from openapi_server import util
+from trolie-flask import util
 
-from openapi_server.models.conditional_value_set_inner import ConditionalValueSetInner  # noqa: E501
-from openapi_server.models.limit import Limit  # noqa: E501
-from openapi_server.models.limit_value_set_inner import LimitValueSetInner  # noqa: E501
-from openapi_server.models.proposal_status import ProposalStatus  # noqa: E501
+from trolie-flask.models.conditional_value_set_inner import ConditionalValueSetInner  # noqa: E501
+from trolie-flask.models.limit import Limit  # noqa: E501
+from trolie-flask.models.limit_value_set_inner import LimitValueSetInner  # noqa: E501
+from trolie-flask.models.proposal_status import ProposalStatus  # noqa: E501
 import re  # noqa: E501
 
 class SeasonalProposalSeason(Model):

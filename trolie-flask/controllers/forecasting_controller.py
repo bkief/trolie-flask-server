@@ -3,13 +3,13 @@ from typing import Dict
 from typing import Tuple
 from typing import Union
 
-from openapi_server.models.forecast_limits_detailed_snapshot import ForecastLimitsDetailedSnapshot  # noqa: E501
-from openapi_server.models.forecast_limits_snapshot import ForecastLimitsSnapshot  # noqa: E501
-from openapi_server.models.forecast_proposal import ForecastProposal  # noqa: E501
-from openapi_server.models.forecast_proposal_status import ForecastProposalStatus  # noqa: E501
-from openapi_server.models.one_ofintegerstring import OneOfintegerstring  # noqa: E501
-from openapi_server.models.problem import Problem  # noqa: E501
-from openapi_server import util
+from trolie-flask.models.forecast_limits_detailed_snapshot import ForecastLimitsDetailedSnapshot  # noqa: E501
+from trolie-flask.models.forecast_limits_snapshot import ForecastLimitsSnapshot  # noqa: E501
+from trolie-flask.models.forecast_proposal import ForecastProposal  # noqa: E501
+from trolie-flask.models.forecast_proposal_status import ForecastProposalStatus  # noqa: E501
+from trolie-flask.models.one_ofintegerstring import OneOfintegerstring  # noqa: E501
+from trolie-flask.models.problem import Problem  # noqa: E501
+from trolie-flask import util
 
 
 def get_limits_forecast_snapshot(offset_period_start=None, period_end=None, monitoring_set=None, transmission_facility=None):  # noqa: E501

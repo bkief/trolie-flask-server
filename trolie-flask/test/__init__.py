@@ -3,7 +3,7 @@ import logging
 import connexion
 from flask_testing import TestCase
 
-from openapi_server.encoder import JSONEncoder
+from trolie-flask.encoder import JSONEncoder
 
 
 class BaseTestCase(TestCase):

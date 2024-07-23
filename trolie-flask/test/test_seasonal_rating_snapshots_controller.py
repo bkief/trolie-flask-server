@@ -2,11 +2,11 @@ import unittest
 
 from flask import json
 
-from openapi_server.models.one_ofintegerstring import OneOfintegerstring  # noqa: E501
-from openapi_server.models.problem import Problem  # noqa: E501
-from openapi_server.models.season_instance import SeasonInstance  # noqa: E501
-from openapi_server.models.seasonal_rating_snapshot import SeasonalRatingSnapshot  # noqa: E501
-from openapi_server.test import BaseTestCase
+from trolie-flask.models.one_ofintegerstring import OneOfintegerstring  # noqa: E501
+from trolie-flask.models.problem import Problem  # noqa: E501
+from trolie-flask.models.season_instance import SeasonInstance  # noqa: E501
+from trolie-flask.models.seasonal_rating_snapshot import SeasonalRatingSnapshot  # noqa: E501
+from trolie-flask.test import BaseTestCase
 
 
 class TestSeasonalRatingSnapshotsController(BaseTestCase):

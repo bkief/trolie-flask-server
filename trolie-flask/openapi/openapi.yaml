@@ -449,7 +449,7 @@ paths:
       tags:
       - Operating Snapshots
       - Forecasting
-      x-openapi-router-controller: openapi_server.controllers.operating_snapshots_controller
+      x-openapi-router-controller: trolie-flask.controllers.operating_snapshots_controller
   /limits/realtime-snapshot:
     get:
       description: |2
@@ -716,7 +716,7 @@ paths:
       tags:
       - Operating Snapshots
       - Real-Time
-      x-openapi-router-controller: openapi_server.controllers.operating_snapshots_controller
+      x-openapi-router-controller: trolie-flask.controllers.operating_snapshots_controller
   /rating-proposals/forecast:
     get:
       description: |2
@@ -890,7 +890,7 @@ paths:
       tags:
       - Rating Proposals
       - Forecasting
-      x-openapi-router-controller: openapi_server.controllers.rating_proposals_controller
+      x-openapi-router-controller: trolie-flask.controllers.rating_proposals_controller
     patch:
       description: |2
 
@@ -1204,7 +1204,7 @@ paths:
       tags:
       - Rating Proposals
       - Forecasting
-      x-openapi-router-controller: openapi_server.controllers.rating_proposals_controller
+      x-openapi-router-controller: trolie-flask.controllers.rating_proposals_controller
   /rating-proposals/realtime:
     get:
       description: |2
@@ -1378,7 +1378,7 @@ paths:
       tags:
       - Rating Proposals
       - Real-Time
-      x-openapi-router-controller: openapi_server.controllers.rating_proposals_controller
+      x-openapi-router-controller: trolie-flask.controllers.rating_proposals_controller
     post:
       description: "\nAt the discretion of the TROLIE server owner, Ratings Providers\
         \ use \nthis endpoint to submit ratings within the current hour.  \nThese\
@@ -1621,7 +1621,7 @@ paths:
       tags:
       - Rating Proposals
       - Real-Time
-      x-openapi-router-controller: openapi_server.controllers.rating_proposals_controller
+      x-openapi-router-controller: trolie-flask.controllers.rating_proposals_controller
   /rating-proposals/seasonal:
     get:
       description: "\nObtain the latest Seasonal Ratings the Ratings Provider has\
@@ -1839,7 +1839,7 @@ paths:
       summary: Get a Seasonal Rating Proposal
       tags:
       - Rating Proposals
-      x-openapi-router-controller: openapi_server.controllers.rating_proposals_controller
+      x-openapi-router-controller: trolie-flask.controllers.rating_proposals_controller
     patch:
       description: Update this Provider's Rating Proposal
       operationId: patch_seasonal_proposal
@@ -2055,7 +2055,7 @@ paths:
       summary: Update this Provider's Rating Proposal
       tags:
       - Rating Proposals
-      x-openapi-router-controller: openapi_server.controllers.rating_proposals_controller
+      x-openapi-router-controller: trolie-flask.controllers.rating_proposals_controller
   /rating-proposals/seasonal/{ratings-provider}:
     get:
       description: Obtain a specific rating proposal by ratings provider
@@ -2279,7 +2279,7 @@ paths:
       summary: Obtain a specific rating proposal by ratings provider
       tags:
       - Rating Proposals
-      x-openapi-router-controller: openapi_server.controllers.rating_proposals_controller
+      x-openapi-router-controller: trolie-flask.controllers.rating_proposals_controller
     patch:
       description: Update a given Provider's Rating Proposal
       operationId: patch_seasonal_proposal_by_provider
@@ -2504,7 +2504,7 @@ paths:
       summary: Update a given Provider's Rating Proposal
       tags:
       - Rating Proposals
-      x-openapi-router-controller: openapi_server.controllers.rating_proposals_controller
+      x-openapi-router-controller: trolie-flask.controllers.rating_proposals_controller
   /seasonal-ratings/season-instances:
     get:
       description: "Seasonal ratings are always bound against season instances, with\
@@ -2674,7 +2674,7 @@ paths:
       summary: Get Instances of Seasons
       tags:
       - Seasonal Rating Snapshots
-      x-openapi-router-controller: openapi_server.controllers.seasonal_rating_snapshots_controller
+      x-openapi-router-controller: trolie-flask.controllers.seasonal_rating_snapshots_controller
   /seasonal-ratings/season-instances/{id}:
     get:
       description: Gets a single season instance.
@@ -2853,7 +2853,7 @@ paths:
       summary: Gets a single season instance.
       tags:
       - Seasonal Rating Snapshots
-      x-openapi-router-controller: openapi_server.controllers.seasonal_rating_snapshots_controller
+      x-openapi-router-controller: trolie-flask.controllers.seasonal_rating_snapshots_controller
   /seasonal-ratings/snapshot:
     get:
       description: Retrieve the nominal and seasonal ratings.
@@ -3084,7 +3084,7 @@ paths:
       summary: Get Seasonal Ratings
       tags:
       - Seasonal Rating Snapshots
-      x-openapi-router-controller: openapi_server.controllers.seasonal_rating_snapshots_controller
+      x-openapi-router-controller: trolie-flask.controllers.seasonal_rating_snapshots_controller
   /temporary-aar-exceptions:
     get:
       description: "Search for Temporary AAR Exceptions.  Will return any Temporary\
@@ -3319,7 +3319,7 @@ paths:
       summary: Temporary AAR Exceptions
       tags:
       - Temporary AAR Exceptions
-      x-openapi-router-controller: openapi_server.controllers.temporary_aar_exceptions_controller
+      x-openapi-router-controller: trolie-flask.controllers.temporary_aar_exceptions_controller
     post:
       description: Create a new temporary AAR Exception
       operationId: create_temporary_aar_exception
@@ -3533,7 +3533,7 @@ paths:
       summary: Create a new temporary AAR Exception
       tags:
       - Temporary AAR Exceptions
-      x-openapi-router-controller: openapi_server.controllers.temporary_aar_exceptions_controller
+      x-openapi-router-controller: trolie-flask.controllers.temporary_aar_exceptions_controller
   /temporary-aar-exceptions/{id}:
     delete:
       description: Delete a specific temporary AAR Exception by Id.
@@ -3687,7 +3687,7 @@ paths:
       summary: Delete a specific temporary AAR Exception by Id.
       tags:
       - Temporary AAR Exceptions
-      x-openapi-router-controller: openapi_server.controllers.temporary_aar_exceptions_controller
+      x-openapi-router-controller: trolie-flask.controllers.temporary_aar_exceptions_controller
     get:
       description: Obtain a specific temporary AAR exception by Id.
       operationId: get_temporary_aar_exception
@@ -3879,7 +3879,7 @@ paths:
       summary: Obtain a specific temporary AAR exception by Id.
       tags:
       - Temporary AAR Exceptions
-      x-openapi-router-controller: openapi_server.controllers.temporary_aar_exceptions_controller
+      x-openapi-router-controller: trolie-flask.controllers.temporary_aar_exceptions_controller
     put:
       description: Updates an existing Temporary AAR Exception.
       operationId: update_temporary_aar_exception
@@ -4087,7 +4087,7 @@ paths:
       summary: Updates an existing Temporary AAR Exception.
       tags:
       - Temporary AAR Exceptions
-      x-openapi-router-controller: openapi_server.controllers.temporary_aar_exceptions_controller
+      x-openapi-router-controller: trolie-flask.controllers.temporary_aar_exceptions_controller
   /temporary-seasonal-ratings:
     get:
       description: "\nSearch for Temporary Seasonal Ratings.  Will return any Temporary\
@@ -4319,7 +4319,7 @@ paths:
       summary: Get Temporary Seasonal Ratings
       tags:
       - Temporary Seasonal Ratings
-      x-openapi-router-controller: openapi_server.controllers.temporary_seasonal_ratings_controller
+      x-openapi-router-controller: trolie-flask.controllers.temporary_seasonal_ratings_controller
     post:
       description: |
         Create a new temporary temporary seasonal rating
@@ -4529,7 +4529,7 @@ paths:
         Create a new temporary temporary seasonal rating
       tags:
       - Temporary Seasonal Ratings
-      x-openapi-router-controller: openapi_server.controllers.temporary_seasonal_ratings_controller
+      x-openapi-router-controller: trolie-flask.controllers.temporary_seasonal_ratings_controller
   /temporary-seasonal-ratings/{id}:
     delete:
       description: Delete a specific temporary seasonal rating by its Id.
@@ -4683,7 +4683,7 @@ paths:
       summary: Delete a specific temporary seasonal rating by its Id.
       tags:
       - Temporary Seasonal Ratings
-      x-openapi-router-controller: openapi_server.controllers.temporary_seasonal_ratings_controller
+      x-openapi-router-controller: trolie-flask.controllers.temporary_seasonal_ratings_controller
     get:
       description: Obtain a specific temporary seasonal rating by Id.
       operationId: get_temporary_seasonal_rating
@@ -4872,7 +4872,7 @@ paths:
       summary: Obtain a specific temporary seasonal rating by Id.
       tags:
       - Temporary Seasonal Ratings
-      x-openapi-router-controller: openapi_server.controllers.temporary_seasonal_ratings_controller
+      x-openapi-router-controller: trolie-flask.controllers.temporary_seasonal_ratings_controller
     put:
       description: Updates an existing Temporary Seasonal Rating.
       operationId: update_temporary_seasonal_rating
@@ -5077,7 +5077,7 @@ paths:
       summary: Updates an existing Temporary Seasonal Rating.
       tags:
       - Temporary Seasonal Ratings
-      x-openapi-router-controller: openapi_server.controllers.temporary_seasonal_ratings_controller
+      x-openapi-router-controller: trolie-flask.controllers.temporary_seasonal_ratings_controller
 components:
   headers:
     ETag:
@@ -13108,5 +13108,5 @@ components:
               by the transmission provider
           tokenUrl: https://no-server/oauth2
       type: oauth2
-      x-tokenInfoFunc: openapi_server.controllers.security_controller.info_from_oauth2-primary-flow
-      x-scopeValidateFunc: openapi_server.controllers.security_controller.validate_scope_oauth2-primary-flow
+      x-tokenInfoFunc: trolie-flask.controllers.security_controller.info_from_oauth2-primary-flow
+      x-scopeValidateFunc: trolie-flask.controllers.security_controller.validate_scope_oauth2-primary-flow

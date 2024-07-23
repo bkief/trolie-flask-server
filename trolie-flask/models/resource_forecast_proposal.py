@@ -2,12 +2,12 @@ from datetime import date, datetime  # noqa: F401
 
 from typing import List, Dict  # noqa: F401
 
-from openapi_server.models.base_model import Model
-from openapi_server.models.proposal import Proposal
+from trolie-flask.models.base_model import Model
+from trolie-flask.models.proposal import Proposal
 import re
-from openapi_server import util
+from trolie-flask import util
 
-from openapi_server.models.proposal import Proposal  # noqa: E501
+from trolie-flask.models.proposal import Proposal  # noqa: E501
 import re  # noqa: E501
 
 class ResourceForecastProposal(Model):

@@ -2,12 +2,12 @@ from datetime import date, datetime  # noqa: F401
 
 from typing import List, Dict  # noqa: F401
 
-from openapi_server.models.base_model import Model
-from openapi_server.models.snapshot_detailed import SnapshotDetailed
+from trolie-flask.models.base_model import Model
+from trolie-flask.models.snapshot_detailed import SnapshotDetailed
 import re
-from openapi_server import util
+from trolie-flask import util
 
-from openapi_server.models.snapshot_detailed import SnapshotDetailed  # noqa: E501
+from trolie-flask.models.snapshot_detailed import SnapshotDetailed  # noqa: E501
 import re  # noqa: E501
 
 class ForecastLimitItemDetailed(Model):
